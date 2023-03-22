@@ -1,0 +1,29 @@
+{
+    "oscillators": [1.0, 5.4, 5.5, 5.6, 5.7, 5.8, 4.0],
+    "sequence": [
+        {"frequency": 164.8, "length": 0.5},
+        {"frequency": 196.0, "length": 0.375},
+        {"frequency": 164.8, "length": 0.25},
+        {"frequency": 164.8, "length": 0.125},
+        {"frequency": 220.0, "length": 0.25},
+        {"frequency": 164.8, "length": 0.25},
+        {"frequency": 146.8, "length": 0.25},
+        {"frequency": 164.8, "length": 0.5},
+        {"frequency": 246.9, "length": 0.375},
+        {"frequency": 164.8, "length": 0.25},
+        {"frequency": 164.8, "length": 0.125},
+        {"frequency": 261.6, "length": 0.25},
+        {"frequency": 246.9, "length": 0.25},
+        {"frequency": 196.0, "length": 0.25},
+        {"frequency": 164.8, "length": 0.25},
+        {"frequency": 246.9, "length": 0.25},
+        {"frequency": 329.6, "length": 0.25},
+        {"frequency": 164.8, "length": 0.125},
+        {"frequency": 146.8, "length": 0.25},
+        {"frequency": 146.8, "length": 0.125},
+        {"frequency": 123.5, "length": 0.25},
+        {"frequency": 185.0, "length": 0.25},
+        {"frequency": 164.8, "length": 1.0},
+        {"frequency": 0.0, "length": 0.25}
+    ]
+}
