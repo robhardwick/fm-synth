@@ -1,4 +1,5 @@
 mod oscillator;
+mod sequence;
 mod song;
 mod synth;
 
