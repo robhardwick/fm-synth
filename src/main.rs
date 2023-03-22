@@ -1,4 +1,5 @@
 mod song;
+mod synth;
 
 use std::env;
 use std::thread;
@@ -10,6 +11,7 @@ use cpal::{
 };
 
 use song::Song;
+use synth::Synth;
 
 fn main() -> Result<()> {
     let path = env::args().nth(1).ok_or(anyhow!("No song specified"))?;
@@ -21,10 +23,12 @@ fn main() -> Result<()> {
         .ok_or(anyhow!("No default output device"))?;
     let config: StreamConfig = device.default_output_config()?.into();
 
+    let mut synth = Synth::new(song, config.sample_rate.0 as f32, config.channels as usize);
+
     let stream = device.build_output_stream(
         &config,
         move |data: &mut [f32], _: &cpal::OutputCallbackInfo| {
-            todo!("Write some samples!")
+            synth.play(data);
         },
         move |err| {
             eprintln!("Error: {}", err);
